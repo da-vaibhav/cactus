@@ -14,7 +14,7 @@ class OrdersList extends Component {
           </span>
 
           <span className={ `${baseClassName}__link` }>
-            <Link to='/'>{order.orderNumber}</Link>
+            <Link to={`/order/${order.orderNumber}`}>{order.orderNumber}</Link>
           </span>
 
           <span className={`${baseClassName}__date`}>
