@@ -1,0 +1,48 @@
+.po_status {
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  flex-basis: 170px; }
+  .po_status::before {
+    content: ' ';
+    background-color: gray;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 50%; }
+
+.po_list__item {
+  padding: 5px;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  align-items: center; }
+  .po_list__item > span {
+    padding: 5px; }
+  .po_list__item__link {
+    text-decoration: underline;
+    text-transform: uppercase;
+    flex-basis: 100px; }
+  .po_list__item__vendor {
+    flex-basis: 150px; }
+  .po_list__item__date {
+    flex-basis: 120px; }
+  .po_list__item_expectedDeliveryDate {
+    flex-basis: 120px; }
+  .po_list__item_status__Draft, .po_list__item_status__ParttiallyReceived {
+    background-color: lightyellow; }
+  .po_list__item_status__Received {
+    background-color: lightgreen; }
+  .po_list__item_status__PendingApproval, .po_list__item_status__Closed {
+    background-color: lightblue; }
+  .po_list__item_status__Purchased {
+    background-color: lightblue; }
+  .po_list__item_status__Rejected {
+    background-color: lightsalmon; }
+  .po_list__item__amount {
+    text-align: center;
+    flex-basis: 100px; }
+
+.po_list__header__container {
+  font-weight: bold; }

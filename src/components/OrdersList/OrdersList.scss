@@ -1,0 +1,75 @@
+.po_status {
+  padding: 3px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  flex-basis: 170px;
+
+  &::before {
+    content: ' ';
+    background-color: gray;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+    border-radius: 50%;
+  }
+}
+
+.po_list__item {
+  padding: 5px;
+  display: flex;
+  border-bottom: 1px solid lightgray;
+  align-items: center;
+
+  > span {
+    padding: 5px;
+  }
+
+   &__link {
+    text-decoration: underline;
+    text-transform: uppercase;
+    flex-basis: 100px;
+  }
+
+  &__vendor {
+    flex-basis: 150px;
+  }
+
+  &__date {
+    flex-basis: 120px;
+  }
+
+  &_expectedDeliveryDate {
+    flex-basis: 120px;
+  }
+
+  &_status {
+    &__Draft,
+    &__ParttiallyReceived {
+      background-color: lightyellow;
+    }
+    &__Received {
+      background-color: lightgreen;
+    }
+    &__PendingApproval,
+    &__Closed {
+      background-color: lightblue;
+    }
+    &__Purchased {
+      background-color: lightblue;
+    }
+    &__Rejected {
+      background-color: lightsalmon;
+    }
+  }
+
+  &__amount {
+    text-align: center;
+    flex-basis: 100px;
+  }
+}
+
+.po_list__header__container {
+  font-weight: bold;
+}
