@@ -1,11 +1,13 @@
 const _ = require('lodash');
 const faker = require('faker');
 
+faker.locale = "en_IND";
+
 const statuses = [
   'Pending Approval',
   'Draft',
   'Purchased',
-  'Parttially Received',
+  'Partially Received',
   'Received',
   'Rejected',
   'Closed'
