@@ -20,7 +20,9 @@ function Generate_Data () {
        vendor: faker.company.companyName(),
        orderNumber: faker.random.alphaNumeric(5),
        date: faker.date.past(),
-       status: _.sample(statuses)
+       status: _.sample(statuses),
+       expectedDeliveryDate: faker.date.future(2019),
+       amount: faker.finance.amount(1000, 3000)
     })
   );
 
