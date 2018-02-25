@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 .App {
   background-color: lightgray;
 }
@@ -5,6 +9,7 @@
 nav {
   width: 20%;
   float: left;
+  height: 100vh;
 }
 
 main {
