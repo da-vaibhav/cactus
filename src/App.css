@@ -1,0 +1,13 @@
+.App {
+  background-color: lightgray;
+}
+
+nav {
+  width: 20%;
+  float: left;
+}
+
+main {
+  width: 80%;
+  float: right;
+}
