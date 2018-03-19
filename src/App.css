@@ -2,10 +2,17 @@
   box-sizing: border-box;
 }
 
-.App {
-  background-color: lightgray;
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #F4F6F8;
 }
 
+.App {
+}
+
+a {
+  color: #5C6AC4;
+}
 nav {
   width: 20%;
   float: left;
