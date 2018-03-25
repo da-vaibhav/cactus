@@ -16,3 +16,22 @@ nav {
 main {
   width: 80%;
   float: right; }
+
+.ui-input > input, textarea {
+  border-radius: 3px;
+  border: 1px solid #C4CDD5;
+  padding: 8px 12px;
+  font-size: 14px;
+  line-height: 20px; }
+  .ui-input > input::placeholder, textarea::placeholder {
+    color: #919EAB; }
+
+.ui-button {
+  padding: 8px 10px;
+  border-radius: 3px;
+  background-color: #3F51B5;
+  color: white;
+  line-height: 20px;
+  font-size: 14px;
+  border: 1px solid #283593;
+  box-shadow: 0 2px rgba(22, 29, 37, 0.1); }
