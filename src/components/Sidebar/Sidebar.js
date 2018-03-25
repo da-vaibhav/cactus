@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import routes from '../../routes';
+import './Sidebar.css';
 
 class Sidebar extends Component {
   render() {
     return (
-      <ul>
+      <ul className="navList">
         {routes.map(route =>
            <li key={ route.path } >
-            <Link to={route.path}>
+            <NavLink to={route.path} className={ route.title.toLowerCase() } >
+              <img src={ `/media/${route.title}.svg` } alt='' />
+              &nbsp;
               {route.title}
-            </Link>
+            </NavLink>
           </li>
         )}
       </ul>

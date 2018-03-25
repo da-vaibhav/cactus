@@ -1,0 +1,15 @@
+.navList {
+  list-style-type: none;
+  li {
+    margin-bottom: 6px;
+  }
+  a {
+    text-decoration: none;
+    line-height: 20px;
+    img {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
